@@ -2,13 +2,16 @@ import { useEffect } from "react";
 
 import { ThemeProvider } from "@mui/material/styles";
 
-import { Button, Container } from "@mui/material";
+import { Container } from "@mui/material";
 import theme from "./styles/theme";
+import Appbar from "./components/appbar";
 
 /* 
 
 16.26 custom theme
 20.14 appbar
+
+51.23 banner
 */
 
 function App() {
@@ -19,8 +22,9 @@ function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="xl" sx={{ background: "#fff" }}>
-				{/* 
-      
+				<Appbar />
+
+				{/*       
       appbar
       banner
       promotions
@@ -33,12 +37,6 @@ function App() {
       appdrawer
 
       */}
-				<Button
-					variant="contained"
-					onClick={() => console.log("click click")}
-				>
-					Botoncillo
-				</Button>
 			</Container>
 		</ThemeProvider>
 	);
