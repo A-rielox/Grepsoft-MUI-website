@@ -5,6 +5,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Container } from "@mui/material";
 import theme from "./styles/theme";
 import Appbar from "./components/appbar";
+import Banner from "./components/banner";
 
 /* 
 
@@ -12,6 +13,7 @@ import Appbar from "./components/appbar";
 20.14 appbar
 
 51.23 banner
+1.04.29 custom slider
 */
 
 function App() {
@@ -24,19 +26,7 @@ function App() {
 			<Container maxWidth="xl" sx={{ background: "#fff" }}>
 				<Appbar />
 
-				{/*       
-      appbar
-      banner
-      promotions
-      title
-      products
-      footer
-
-      --hidden
-      searchbos
-      appdrawer
-
-      */}
+				<Banner />
 			</Container>
 		</ThemeProvider>
 	);
